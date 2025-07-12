@@ -1,82 +1,83 @@
-.Parent{
+.Parent {
   background-color: rgb(248, 246, 244);
-  border-radius: 20px; 
-  height : 400px;
-  width : 400px;
-  margin-left : 550px;
-  margin-top : 200px;  
+  border-radius: 20px;
+  height: 400px;
+  width: 400px;
+  margin-left: 550px;
+  margin-top: 200px;
 }
 
-.Heading{
+.Heading {
   text-align: center;
   color: rgb(58, 58, 201);
-  padding-top : 20px;
+  padding-top: 20px;
   font-weight: bolder;
   font-size: larger;
-  text-decoration: double ;
+  text-decoration: double;
 }
 
-.line{
+.line {
   border-radius: 25px;
-  height : 10px;
-  width : 370px;
+  height: 10px;
+  width: 370px;
   background-color: rgb(23, 23, 189);
-  margin-left : 15px;
+  margin-left: 15px;
   opacity: 0.1;
 }
 
-.container{
+.container {
   text-align: center;
-  margin-top : 30px;
+  margin-top: 30px;
 }
 
-.input1 , .input2{
-  margin-left : 10px;
-  border-radius : 20px;
-  height : 25px;
+.input1,
+.input2 {
+  margin-left: 10px;
+  border-radius: 20px;
+  height: 25px;
   font-weight: bold;
   color: black;
   text-align: center;
   background-color: rgb(210, 203, 203);
-  width : 200px;
+  width: 200px;
   margin-top: 20px;
 }
 
-.button{
+.button {
   cursor: pointer;
   margin-top: 30px;
-  border-radius : 20px;
-  height : 45px;
+  border-radius: 20px;
+  height: 45px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-align: center;
   background-color: rgb(31, 4, 233);
-  width : 200px;
+  width: 200px;
 
 }
 
-.description1{
+.description1 {
   margin-right: 267px;
   color: grey;
 }
 
-.description10{
-  display : flex;
+.description10 {
+  display: flex;
   justify-content: space-between;
 }
 
-.description101{
+.description101 {
   padding-left: 30px;
   font-weight: bold;
   font-size: x-large;
 }
 
-.description102{
+.description102 {
   border-radius: 20px;
   background-color: rgb(113, 219, 113);
   margin-right: 20px;
-  height : 26px;
-  width : 150px;
+  height: 26px;
+  width: 150px;
   font-weight: bold;
   padding-top: 5px;
 }

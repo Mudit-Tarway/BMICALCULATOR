@@ -1,19 +1,19 @@
-export const calculateBMI = (height , weight) => {
-    let bmi ;
+export const calculateBMI = (height, weight) => {
+  let bmi;
 
-    if(height <=0 || weight <= 0 || isNaN(height) || isNaN(weight)){
-        return null;
-    }
+  if (height <= 0 || weight <= 0 || isNaN(height) || isNaN(weight)) {
+    return null;
+  }
 
-    bmi = weight / (height * height);
+  bmi = weight / (height * height);
 
-    return bmi;
+  return bmi;
 };
 
 export const getBMIMessage = (bmi) => {
-  
+
   if (bmi === null || isNaN(bmi)) {
-    return "Invalid BMI"; 
+    return "Invalid BMI";
   }
 
   if (bmi < 18.5) {
@@ -27,6 +27,6 @@ export const getBMIMessage = (bmi) => {
   } else if (bmi >= 35 && bmi < 39.9) {
     return "Obese (Class II)";
   } else {
-    return "Obese (Class III)"; 
+    return "Obese (Class III)";
   }
 };
