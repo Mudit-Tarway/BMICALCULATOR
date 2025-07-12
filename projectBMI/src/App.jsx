@@ -1,34 +1,67 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import {calculateBMI , getBMIMessage } from './logic.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [weight , setweight] = useState();
+  const [height , setHeight] = useState();
+  const [result , setResult] = useState(null);
+  const [message , setMessage] = useState(' ');
+
+  const handleHeightChange = (event) => {
+    setHeight(event.target.value);
+  };
+
+  const handleWeightChange = (event) => {
+    setweight(event.target.value);
+  };
+
+  const handleCalculate = () => {
+    const bmi = calculateBMI(parseFloat(height), parseFloat(weight));
+    setResult(bmi ? bmi.toFixed(2) : null);
+    setMessage(getBMIMessage(bmi));
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='Parent'>
+     <div className='Heading'>
+      BMI CALCULATOR 
+      <div className='line'></div>
+     </div>
+     
+     <div className='container'>
+      <div className='d1'> 
+        <input type='number' className='input1'
+        value = {height}
+        onChange={handleHeightChange} 
+        placeholder="Height ( in m ) " />
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      
+      <div className='d2'> 
+        <input type='number' className='input2'
+        value = {weight}
+        onChange={handleWeightChange} 
+        placeholder="Weight (in kg) " />
+
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      
+      <button className='button' onClick={handleCalculate} >Calculate BMI </button>
+      
+      <div className='description'>
+        <p className='description1'> Your BMI : </p>
+        <div className='description10'>
+          <div className='description101'>
+            {result} 
+          </div>
+          <div className='description102'>
+            {message}
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
   )
 }
 
