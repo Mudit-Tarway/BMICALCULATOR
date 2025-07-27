@@ -1,5 +1,10 @@
+body{
+    background: linear-gradient(to right, #56ab2f, #63a6e0);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
 .Parent {
-  background-color: rgb(248, 246, 244);
+  background: linear-gradient(to bottom , white,pink);
   border-radius: 20px;
   height: 400px;
   width: 400px;

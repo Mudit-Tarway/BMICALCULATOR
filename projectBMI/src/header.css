@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+}
+.item1 , .item2{
+    margin-right:10px;
+    margin-left: 10px;
+}
+.logo{
+    margin-left: 10px;
+}

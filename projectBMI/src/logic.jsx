@@ -2,7 +2,7 @@ export const calculateBMI = (height, weight) => {
   let bmi;
 
   if (height <= 0 || weight <= 0 || isNaN(height) || isNaN(weight)) {
-    return null;
+    alert("Enter proper height or weight");
   }
 
   bmi = weight / (height * height);
