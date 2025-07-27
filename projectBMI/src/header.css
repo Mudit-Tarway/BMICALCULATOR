@@ -7,6 +7,11 @@
 .item1 , .item2{
     margin-right:10px;
     margin-left: 10px;
+    color: black;
+}
+.item1:hover,
+.item2:hover {
+  color: #555;
 }
 .logo{
     margin-left: 10px;
